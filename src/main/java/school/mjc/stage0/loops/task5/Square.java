@@ -4,6 +4,20 @@ public class Square {
     public void printSquareFrom8s(int sideLength){
         String sym = "8";
         for (int i = 0; i < sideLength; i++) {
+            if (i == 0 || i == sideLength - 1) {
+                for (int j = 0; j < sideLength; j++) {
+                    System.out.print(sym);
+                }
+            } else {
+                System.out.print(sym);
+                for (int j = 0; j < sideLength - 2; j++) {
+                    System.out.print(" ");
+                }
+                System.out.print(sym);
+            }
+            System.out.println();
+        }
+        /*for (int i = 0; i < sideLength; i++) {
             if (i == sideLength - 1) {
                 System.out.println(sym);
             } else {
@@ -19,7 +33,7 @@ public class Square {
         }
         for (int i = 0; i < sideLength; i++) {
             System.out.print(sym);
-        }
+        }*/
     }
 
     public static void main(String[] args) {
