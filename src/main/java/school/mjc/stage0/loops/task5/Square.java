@@ -15,15 +15,15 @@ public class Square {
             for (int j = 0; j < sideLength - 2; j++) {
                 System.out.print(" ");
             }
-            System.out.println(sym);
+            System.out.print(sym);
         }
         for (int i = 0; i < sideLength; i++) {
             System.out.print(sym);
         }
     }
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         Square s = new Square();
         s.printSquareFrom8s(2);
-    }*/
+    }
 }
